@@ -81,7 +81,7 @@ export const HeroSection = () => {
             <div className="absolute -top-8 -left-8 lg:-left-16">
               <div className="bg-white rounded-2xl px-6 py-3 shadow-float relative animate-bounce-in">
                 <p className="text-primary font-semibold">
-                  Hi! I'm Orbit! 👋
+                  Hi! I&apos;m Orbit! 👋
                 </p>
                 <div className="absolute bottom-0 left-8 transform translate-y-1/2 rotate-45 w-3 h-3 bg-white"></div>
               </div>

@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Waves, Microscope, Satellite, Sparkles } from "lucide-react";
 
-// Mock NASA PACE data structure
+// Mock NASA PACE data structure (simulating real API response)
 const mockDataPoints = [
   { location: "Pacific Ocean", planktonCount: 850, oxygenLevel: 92, date: "2024-01-15" },
   { location: "Atlantic Ocean", planktonCount: 720, oxygenLevel: 89, date: "2024-01-15" },
@@ -17,13 +17,13 @@ export const InteractiveDataViz = () => {
   const [showFunFact, setShowFunFact] = useState(false);
 
   const getFunFact = (location: string) => {
-    const facts = {
+    const facts: Record<string, string> = {
       "Pacific Ocean": "The Pacific has the most diverse plankton in the world! 🌈",
       "Atlantic Ocean": "Atlantic plankton help create the oxygen you breathe! 💨",
       "Indian Ocean": "These tiny heroes can be seen from space! 🛰️",
       "Arctic Ocean": "Arctic plankton are super tough cold-weather heroes! 🧊"
     };
-    return facts[location as keyof typeof facts] || "Plankton are amazing!";
+    return facts[location] || "Plankton are amazing!";
   };
 
   const getHealthLevel = (count: number) => {
