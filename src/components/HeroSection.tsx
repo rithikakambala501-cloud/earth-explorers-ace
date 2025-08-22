@@ -72,7 +72,7 @@ export const HeroSection = () => {
         <Button 
           variant="outline" 
           size="lg"
-          className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-6 rounded-2xl transition-bounce"
+          className="border-white/30 text-black hover:bg-white/10 text-lg px-8 py-6 rounded-2xl transition-bounce"
           onClick={() => router.push("/lessons")}
         >
           📚 View Lessons
