@@ -52,41 +52,16 @@ export const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            import { useRouter } from "next/navigation";
-
-export const HeroSection = () => {
-  const router = useRouter();
-
-  return (
-    <section className="...">
-      {/* ... */}
-      <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-        <Button 
-          size="lg" 
-          className="bg-accent hover:bg-accent/90 text-white shadow-glow text-lg px-8 py-6 rounded-2xl transition-bounce hover:scale-105"
-          onClick={() => router.push("/explore")}
-        >
-          🌊 Start Exploring
-        </Button>
-        
-        <Button 
-          variant="outline" 
-          size="lg"
-          className="border-white/30 text-black hover:bg-white/10 text-lg px-8 py-6 rounded-2xl transition-bounce"
-          onClick={() => router.push("/lessons")}
-        >
-          📚 View Lessons
-        </Button>
-      </div>
-      {/* ... */}
-    </section>
-  );
-};
-
+            <Button 
+              size="lg" 
+              className="bg-accent hover:bg-accent/90 text-white shadow-glow text-lg px-8 py-6 rounded-2xl transition-bounce hover:scale-105"
+            >
+              🌊 Start Exploring
+            </Button>
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white/30 text-white hover:bg-green/10 text-lg px-8 py-6 rounded-2xl transition-bounce"
+              className="border-white/30 text-white hover:bg-white/10 text-lg px-8 py-6 rounded-2xl transition-bounce"
             >
               📚 View Lessons
             </Button>
